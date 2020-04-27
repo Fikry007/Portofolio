@@ -3,6 +3,9 @@
     background-color: black;
     box-shadow: 2px 2px 5px rgba(0,0,0,0.7);
 }
+/* .navbar-nav{
+    
+} */
 .navbar-brand, .nav-link{
     font-size: 18px;
     font-weight: 500;
@@ -15,7 +18,7 @@
 }
 .nav-link{
     text-align: center;
-    margin-right: 50px;
+    margin: 0 auto;
 }
 .nav-link:hover{
     transition: 0.5s;
@@ -40,6 +43,7 @@
     background-color: #2098D1;
 }
 .jumbotron .display-4{
+    font-size: 1rem;
     font-weight: 200;
     color: white;
     margin-top: 70px;
@@ -53,11 +57,15 @@
     /* text-indent: 40px; */
     margin-bottom: 25px;
 }
+p .description, a .view-portfolio{
+    margin-top: 50px;
+    color: salmon;
+}
 .view-portfolio{
     text-decoration: none;
     color: white;
     font-weight: 500;
-    font-size: larger;
+    font-size: 1rem;
     font-style: normal;
 }
 .view-portfolio:hover{
@@ -74,6 +82,15 @@
     color: black;
     cursor: pointer;
 }
+
+/* fikry */
+.fikry{
+    font-size: 1rem;
+}
+.description{
+    font-size: 1rem;
+}
+
 
 /* about */
 
@@ -151,10 +168,29 @@
     text-align: center;
     font-size: 200;
 } */
+footer p{
+    font-size: 0.8rem;
+}
+
+/* tablet */
+.jumbotron .display-4{
+    font-size: 2.5rem;
+}
+p .description{
+    font-size: 2rem;
+    color: salmon !important;
+}
+.fikry2{
+    margin-top: -65px;
+}
+
 
 
 /* desktop */
 @media (min-width: 992px) {
+    .navbar-nav{
+        margin-left: auto;
+    }
     .nav-link:hover::after{
         transition: 0.5;
         display: block;
@@ -173,10 +209,29 @@
         margin-bottom: 150px;
         font-size: 24px;
     }
-    
+    .jumbotron .display-4{
+        font-size: 3rem;
+        font-weight: bold;
+    }
+    /* fikry */
+    .fikry{
+        font-size: 2rem;
+    }
+    /* description */
+    .description{
+        font-size: 3rem;
+    }
+    /* view-portfolio */
     /* about */
     .about p{
         font-size: 18px;
+    }
+    .view-portfolio{
+        text-decoration: none;
+        color: white;
+        font-weight: 500;
+        font-size: 2rem;
+        font-style: normal;
     }
 
     /* hire me */
@@ -185,5 +240,8 @@
     }
     .hire-me button{
         margin-top: 30px;
+    }
+    footer p{
+        font-size: 1.1rem;
     }
 }
